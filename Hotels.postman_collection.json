@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "50cd1611-145c-4e4b-8e38-b48cd5b27719",
+		"name": "Hotels",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Hotel",
+			"item": [
+				{
+					"name": "Register Hotel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Mavin\",\r\n    \"bedrooms\":[{\r\n        \"price\": 50.00,\r\n        \"empty\": \"true\",\r\n        \"type\": \"STANDARD\"\r\n    }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/hotel/register",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"hotel",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Bedrooms",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Mavin\",\r\n    \"bedrooms\":[{\r\n        \"price\": 50.00,\r\n        \"empty\": \"true\",\r\n        \"type\": \"STANDARD\"\r\n    }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/hotel/addRooms",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"hotel",
+								"addRooms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bedrooms List",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Mavin\",\r\n    \"bedrooms\":[{\r\n        \"price\": 50.00,\r\n        \"empty\": \"true\",\r\n        \"type\": \"STANDARD\"\r\n    }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/hotel/bedroomsList1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"hotel",
+								"bedroomsList1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
